@@ -34,9 +34,10 @@ class Solution(object):
                     return [i, j]
         '''
 
+
 '''
 Notes:
-1. range() function
+range() function
 - range(a) 
   where 'a' is a number
   equals to [0,a)
