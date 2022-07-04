@@ -78,7 +78,7 @@ info_dic = {"name": "John", "age": 36}
 fruits_list.append("orange")
 print(fruits_list)
 
-# extend collection
+# add list or other collection
 tropical = ("mango", "pineapple", "papaya")
 fruits_list.extend(tropical)
 print(fruits_list)
