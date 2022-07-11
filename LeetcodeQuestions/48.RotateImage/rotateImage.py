@@ -28,5 +28,15 @@ def rotate(matrix):
         i += 1
         j = 0
 
+
+    # BETTER WAY
+    # N = len(matrix)
+    # for r in range(N):
+    #     for c in range(r):
+    #         matrix[r][c],matrix[c][r] = matrix[c][r],matrix[r][c] # when swapping, no necessary to write temp
+    # for r in matrix:
+    #     r.reverse()
+
+
 # runtime beats 90.20%
 # memory usage beats 90.28%
