@@ -10,8 +10,9 @@ def reverseString(s):
         t += 1
 
     # shortcut:
-    # s[:]=s[::-1]
-    # list[< start >: < stop >: < step >]
+    # 1. s[:]=s[::-1]
+    #    list[< start >: < stop >: < step >]
+    # 2. s.reverse()
 
 
 s = ["h", "e", "l", "l", "o"]
