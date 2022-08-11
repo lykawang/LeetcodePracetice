@@ -19,8 +19,14 @@ class Solution(object):
         """
         cur = head
         while cur:  # while cur is not None
-            if cur.next and cur.val == cur.next.val: # cannot work without "cur.next and"
+            if cur.next and cur.val == cur.next.val:  # cannot work without "cur.next and"
                 cur.next = cur.next.next
             else:
                 cur = cur.next
         return head
+
+
+'''
+Runtime: 32 ms, faster than 81.40% of Python online submissions for Remove Duplicates from Sorted List.
+Memory Usage: 13.4 MB, less than 86.80% of Python online submissions for Remove Duplicates from Sorted List.
+'''
