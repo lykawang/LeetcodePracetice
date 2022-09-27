@@ -77,8 +77,4 @@ def countPrimes(n):
     return sum(nums)
 
 
-
-
-
-
-print(countPrimes(1000))
+print(countPrimes(50000))
