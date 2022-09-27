@@ -26,7 +26,7 @@ def isPalindrome(head):
 runtime beats 12.69%, memory usage beats 40.97%
 """
 
-    # faster approach
+    # one faster approach
     # l = []
     # while head:
     #     l.append(head.val)
