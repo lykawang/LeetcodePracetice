@@ -15,9 +15,20 @@ class ListNode(object):
         self.val = x
         self.next = None
 
+
 class Solution(object):
     def hasCycle(self, head):
         """
         :type head: ListNode
         :rtype: bool
         """
+        list_node = []
+        cur = head
+        while cur:
+            if cur.val in list_node:
+                pass
+            else:
+                list_node.append(cur.val)
+                cur = cur.next
+
+        return False

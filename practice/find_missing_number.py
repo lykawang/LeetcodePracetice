@@ -11,7 +11,6 @@ def find_missing_number(sort_list):
     return expect_num
 
 
-
 assert (find_missing_number([0, 1, 2, 3, 4, 5, 7]) == 6)
 assert (find_missing_number([1, 2, 3, 4, 5, 6, 7]) == 0)
 assert (find_missing_number([0, 1, 2, 3, 4, 5, 6]) == 7)
