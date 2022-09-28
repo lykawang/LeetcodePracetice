@@ -22,13 +22,18 @@ class Solution(object):
         :type head: ListNode
         :rtype: bool
         """
-        list_node = []
-        cur = head
-        while cur:
-            if cur.val in list_node:
-                pass
-            else:
-                list_node.append(cur.val)
-                cur = cur.next
-
+        slow = head
+        fast = head
+        while fast and fast.next:
+            fast = fast.next.next
+            slow = slow.next
+            if fast == slow:
+                return True
         return False
+
+"""
+See head as an object, check whether fast and slow be the same object
+
+runtime beats 18.47%, 
+memory usage beats 94.29%.
+"""
