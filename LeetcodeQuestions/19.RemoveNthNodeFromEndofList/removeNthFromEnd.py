@@ -12,16 +12,17 @@ def removeNthFromEnd(head, n):
     count = 1
     pre = head
     while cur.next:
-        pre = cur
+        #pre = cur
         count += 1
         cur = cur.next
-    if n == 1:
-        if count == 1:
-            return None
-        else:
-            pre.next = None
-            return head
-    elif n == count:
+    # if n == 1:
+    #     if count == 1:
+    #         return None
+    #     else:
+    #         pre.next = None
+    #         return head
+    # el
+    if n == count:
         head = head.next
         return head
     else:
@@ -37,6 +38,8 @@ def removeNthFromEnd(head, n):
 """
 runtime beats 23.38%
 memory usage beats 40.6%
+
+after#, runtime becomes less
 """
 
 
